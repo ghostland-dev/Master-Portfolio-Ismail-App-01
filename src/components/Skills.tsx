@@ -15,30 +15,40 @@ const metrics = [
 
 export const Skills = () => {
   return (
-    <section className="py-20 bg-background" id="skills">
+    <section className="py-20 bg-gradient-to-b from-background to-gray-50" id="skills">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-secondary mb-12 text-center">
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl font-bold text-secondary mb-16 text-center"
+        >
           Compétences & Réalisations
-        </h2>
+        </motion.h2>
         
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           {metrics.map((metric, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-secondary text-white p-6 rounded-lg text-center"
+              className="bg-secondary/95 text-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
-              <h3 className="text-2xl font-bold mb-2">{metric.value}</h3>
-              <p className="text-gray-300">{metric.label}</p>
+              <h3 className="text-3xl font-bold mb-3 text-primary">{metric.value}</h3>
+              <p className="text-gray-200 text-lg">{metric.label}</p>
             </motion.div>
           ))}
         </div>
 
-        <h3 className="text-2xl font-bold text-secondary mb-8 text-center">
+        <motion.h3 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="text-2xl font-bold text-secondary mb-12 text-center"
+        >
           Frameworks & Technologies
-        </h3>
+        </motion.h3>
         <div className="flex flex-wrap justify-center gap-4">
           {frameworks.map((framework, index) => (
             <motion.div
@@ -46,7 +56,7 @@ export const Skills = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
-              className="bg-white px-4 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition-all cursor-default"
+              className="bg-white px-6 py-3 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg cursor-default"
             >
               {framework}
             </motion.div>
