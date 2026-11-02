@@ -1,55 +1,42 @@
-# Welcome to your Lovable project
+# Portfolio
 
-## Project info
+Personal developer portfolio with animated sections.
 
-There are several ways of editing your application.
+## Features
 
-**Use your preferred IDE**
+- Projects and skills showcase
+- Framer Motion animations
+- Responsive design
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Vite
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui (Radix UI)
+- TanStack Query
+- React Router
+- Framer Motion
 
-Follow these steps:
+## Getting Started
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+git clone https://github.com/ghostland-dev/portfolio-ismail.git
+cd portfolio-ismail
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Other scripts:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- `npm run build`: vite build
+- `npm run lint`: eslint .
+- `npm run preview`: vite preview
 
-**Use GitHub Codespaces**
+## Author
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**Ismail.M**, Software Engineer & DevOps
 
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
- 
-
- 
+- GitHub: [@ghostland-dev](https://github.com/ghostland-dev)
+- Website: [ismail-mouyahada.com](https://www.ismail-mouyahada.com)
